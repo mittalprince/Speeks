@@ -1,0 +1,16 @@
+.uk-tab>*>a {
+    font-family: 'Ubuntu Regular', sans-serif;
+    font-weight: 400;
+    font-size: .875rem;
+    text-transform: none;
+}
+
+dl> dt {
+    font-family: 'Ubuntu Bold', sans-serif;
+    font-size:15px;
+}
+
+dl> dd {
+    font-family: 'Ubuntu Regular', sans-serif;
+    color:#444;
+}

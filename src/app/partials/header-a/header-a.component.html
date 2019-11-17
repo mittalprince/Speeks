@@ -1,0 +1,67 @@
+<nav class="uk-navbar-container uk-navbar-transparent uk-visible@m uk-box-shadow-medium">
+    <div class="uk-container" data-uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" (click)="routeToHome()">
+                <img width="70" src="/assets/images/logo/wb.png" alt="hubx_logo">
+            </a>
+        </div>
+
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav">
+                <li><a (click)="routeToDemo()" class="uk-text-capitalize">Start Practice</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+
+</nav>
+<section class="uk-section uk-section-xsmall uk-section-default"
+    style="border-top: 1px solid #f2f2f2; z-index:1000; background: #f7f7f7;"
+    data-uk-scrollspy="cls: uk-animation-slide-bottom-small">
+    <h6 class="uk-text-center uk-text-small bold-ub">
+        This application is in beta phase.
+    </h6>
+</section>
+
+
+
+
+<nav class="uk-navbar-container uk-navbar-transparent uk-hidden@m">
+    <div class="uk-container" data-uk-navbar>
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="https://platform.hubx.ai/login">
+                <img width="70" src="/assets/images/logo/wb.png" alt="hubx_logo">
+            </a>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a data-uk-toggle="target: #mobi_menu"><span data-uk-icon="icon: menu"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="mobi_menu" data-uk-offcanvas="mode:slide">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <a class="uk-navbar-item uk-logo" (click)="routeToHome()">
+            <img width="70" src="/assets/images/logo/wb.png" alt="hubx_logo">
+        </a>
+        <ul class="uk-nav uk-nav-default">
+            <!-- <li class="uk-active"><a (click)="routeToProducts()" style="color:#000;">Products</a></li>
+            <li>
+                <a (click)="routeToPricing() " style="color:#000;">Pricing</a>
+            </li>
+            <li class=""><a (click)="routeToCompany()" style="color:#000;">Company</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="https://platform.hubx.ai/login" target="_blank" style="color:#000;"><span
+                        class="uk-margin-small-right" data-uk-icon="icon: table"></span>
+                    Login</a></li> -->
+            <li><a (click)="routeToDemo()" style="color:#000;"><span class="uk-margin-small-right"
+                        data-uk-icon="icon: thumbnails"></span>
+                    Start Practice</a></li>
+        </ul>
+    </div>
+</div>

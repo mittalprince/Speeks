@@ -1,0 +1,46 @@
+<app-header-a></app-header-a>
+<div class="uk-section uk-section-xsmall">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-grid uk-grid-small" data-uk-grid>
+            <div class="uk-width-1-1">
+                <div class="uk-flex uk-flex-center">
+                    <div class="uk-width-2-3">
+                        <h2 class="uk-margin-remove">Start Recording your video</h2>
+                    </div>
+                </div>
+
+                <div class="uk-flex uk-flex-center uk-margin-top">
+                    <div class="uk-card uk-card-default uk-border-rounded uk-width-2-3">
+                        <div class="uk-card-body">
+                            <video #video class="video uk-height-large" ></video>
+                        </div>
+                        <div class="uk-card-footer">
+                            <div class="uk-grid uk-grid-small uk-flex uk-flex-right" data-uk-grid>
+                                <div class="uk-width-auto">
+                                    <button class="uk-button uk-button-default uk-border-rounded" (click)="startRecording()" [disabled]="status">Start</button>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <button class="uk-button uk-button-primary uk-border-rounded" (click)="stopRecording()" [disabled]="!status">Stop</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-full" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <div class="uk-grid-collapse uk-child-width-1-1@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" uk-height-viewport>
+                <div class=" uk-grid uk-grid-small uk-width-1-1 uk-flex-middle uk-flex-center" data-uk-grid
+                    data-uk-height-viewport>
+                    <div uk-spinner="ratio: 2"></div>
+                    <h5 class="bold-ub">Your request is processing. Please do not refresh the page.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

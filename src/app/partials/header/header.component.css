@@ -1,0 +1,32 @@
+.uk-nav-default>li>a {
+    color: #333;
+    font-family: 'Ubuntu Regular', sans-serif;
+}
+
+.uk-nav-default>li {
+    color: rgb(97, 95, 95);
+    font-family: 'Ubuntu Bold', sans-serif;
+}
+
+.uk-navbar-nav > li > a {
+    color: #fff;
+    font-family: 'Ubuntu Bold', sans-serif;
+}
+
+.uk-navbar-nav>li>a{
+    color:#fff;
+}
+
+.uk-offcanvas-bar {
+    background: #fff;
+    color: #000;
+}
+
+.uk-offcanvas-close {
+    color: #000;
+}
+
+.login{
+    color: #333;
+    font-family: 'Ubuntu Regular', sans-serif;
+}
