@@ -90,6 +90,11 @@ export class VideoComponent implements OnInit {
         stream.getAudioTracks().forEach(track => track.stop());
         stream.getVideoTracks().forEach(track => track.stop());
         UIkit.modal(document.getElementById('modal-full')).show()
+
+        let t =  setTimeout( () => {
+            UIkit.modal(document.getElementById('modal-full')).hide()
+            this.router.navigate(['./dashboard'])
+        }, 10000)
     }
 
     download() {

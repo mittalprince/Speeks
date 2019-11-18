@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './partials/header/header.component'
 import { HeaderAComponent } from './partials/header-a/header-a.component';
 
+import { BuildChartService } from './services/chart.service';
+import { DummyDataService } from './services/static-data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { HeaderAComponent } from './partials/header-a/header-a.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    BuildChartService,
+    DummyDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
